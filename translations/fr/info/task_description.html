@@ -1,0 +1,64 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    Considérons une séquence de caractères alphabétiques majuscules (A-Z). On dit que la séquence a un "pas constant" si la distance entre les caractères adjacents dans la séquence est la même. Par exemple, la distance entre A et B est de 1, D et F de 2, P et V de 6, Z et C de 3, etc. Notez que l'"enveloppement" de Z à C est défini. Les séquences suivantes ont un "pas constant":
+</p>
+
+<pre>
+    ACEG... step = 2
+    AZYX... step = 25
+</pre>
+
+<p style="text-align: justify;">
+    Deux ou plusieurs séquences sont dites "entrelacées" si leurs éléments adjacents sont séparés par exactement un élément de chacune des autres séquences. Par exemple, les séquences suivantes sont entrelacées:
+</p>
+
+<pre>
+    AQBRCSDT... sequences: ABCD... step = 1
+                           QRST... step = 1
+    AZTAYRAXP...sequences:  AAA... step = 0
+                            ZYX... step = 25
+                            TRP... step = 24
+</pre>
+
+<p style="text-align: justify;">
+    Pour une chaîne donnée de 12 caractères de 1, 2 ou 3 (trouvez-le vous-même) séquences entrelacées, renvoyez les 12 caractères suivants de la séquence.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}sequence-analyzer.svg" alt="example" style="max-height: 200px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Entrée:</strong> Chaîne <span>(str{% if is_js %}ing{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Sortie:</strong> Chaîne <span>(str{% if is_js %}ing{% endif %})</span>.
+</p>
+
+
+<p>
+    <strong>Exemples:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!-- <p>
+    <strong>Preconditions:</strong>
+    <ul>
+    <li><i>both given ints should be between -1000 and 1000</i></li>
+    </ul>
+</p> -->
+<p><i>La mission a été effectuée à partir de <a target="_blank" href="https://icpc.global/worldfinals/problems/1980-ICPC-World-Finals/1980.pdf">The International Collegiate Programming Contest - 1980</a>.</i></p>
