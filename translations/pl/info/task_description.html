@@ -1,0 +1,64 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    Proszę rozważyć ciąg wielkich liter alfabetu (A-Z). Mówi się, że sekwencja ma "stały krok", jeśli odległość między sąsiednimi znakami w sekwencji jest taka sama. Na przykład odległość między A i B wynosi 1, D i F wynosi 2, P i V wynosi 6, Z i C wynosi 3 itd. Proszę zauważyć, że "zawijanie" od Z do C jest zdefiniowane. Następujące sekwencje mają "stały krok":
+</p>
+
+<pre>
+    ACEG... step = 2
+    AZYX... step = 25
+</pre>
+
+<p style="text-align: justify;">
+    O dwóch lub więcej sekwencjach mówi się, że są "splecione", jeśli ich sąsiednie elementy są oddzielone dokładnie jednym elementem każdej z pozostałych sekwencji. Na przykład, następujące sekwencje są splecione:
+</p>
+
+<pre>
+    AQBRCSDT... sequences: ABCD... step = 1
+                           QRST... step = 1
+    AZTAYRAXP...sequences:  AAA... step = 0
+                            ZYX... step = 25
+                            TRP... step = 24
+</pre>
+
+<p style="text-align: justify;">
+    Dla podanego ciągu 12 znaków 1, 2 lub 3 (proszę sprawdzić samemu) splecionych sekwencji, proszę zwrócić następny 12 znak sekwencji.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}sequence-analyzer.svg" alt="example" style="max-height: 200px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Wejście:</strong> String <span>(str{% if is_js %}ing{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Wyjście:</strong> String <span>(str{% if is_js %}ing{% endif %})</span>.
+</p>
+
+
+<p>
+    <strong>Przykłady:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!-- <p>
+    <strong>Preconditions:</strong>
+    <ul>
+    <li><i>both given ints should be between -1000 and 1000</i></li>
+    </ul>
+</p> -->
+<p><i>Misja została pobrana z <a target="_blank" href="https://icpc.global/worldfinals/problems/1980-ICPC-World-Finals/1980.pdf">The International Collegiate Programming Contest - 1980</a>.</i></p>
