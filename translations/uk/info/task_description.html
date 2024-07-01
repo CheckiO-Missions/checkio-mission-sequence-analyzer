@@ -1,0 +1,64 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    Розглянемо послідовність великих літер (A-Z). Кажуть, що послідовність має "постійний крок", якщо відстань між сусідніми символами в послідовності однакова. Наприклад, відстань між A і B дорівнює 1, D і F - 2, P і V - 6, Z і C - 3 і т.д. Зверніть увагу, що визначено "обхід" від Z до C. Наступні послідовності мають "постійний крок":
+</p>
+
+<pre>
+    ACEG... step = 2
+    AZYX... step = 25
+</pre>
+
+<p style="text-align: justify;">
+    Дві або більше послідовностей вважаються "переплетеними", якщо їх сусідні елементи розділені рівно одним елементом кожної з інших послідовностей. Наприклад, наступні послідовності є переплетеними:
+</p>
+
+<pre>
+    AQBRCSDT... sequences: ABCD... step = 1
+                           QRST... step = 1
+    AZTAYRAXP...sequences:  AAA... step = 0
+                            ZYX... step = 25
+                            TRP... step = 24
+</pre>
+
+<p style="text-align: justify;">
+    Для заданого рядка з 12 символів 1, 2 або 3 (з'ясуйте це самостійно) переплетених послідовностей повернути наступний 12 символ послідовності.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}sequence-analyzer.svg" alt="example" style="max-height: 200px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Вхідні дані:</strong> Рядок <span>(str{% if is_js %}ing{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Вихідні дані:</strong> Рядок <span>(str{% if is_js %}ing{% endif %})</span>.
+</p>
+
+
+<p>
+    <strong>Приклади:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!-- <p>
+    <strong>Preconditions:</strong>
+    <ul>
+    <li><i>both given ints should be between -1000 and 1000</i></li>
+    </ul>
+</p> -->
+<p><i>Завдання взято з сайту <a target="_blank" href="https://icpc.global/worldfinals/problems/1980-ICPC-World-Finals/1980.pdf">The International Collegiate Programming Contest - 1980</a>.</i></p>
