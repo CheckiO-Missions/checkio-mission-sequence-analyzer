@@ -1,0 +1,64 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    Betrachten Sie eine Folge von Buchstaben in Großbuchstaben (A-Z). Man sagt, die Folge hat einen "konstanten Schritt", wenn der Abstand zwischen benachbarten Zeichen in der Folge gleich ist. Zum Beispiel ist der Abstand zwischen A und B 1, D und F ist 2, P und V ist 6, Z und C ist 3 usw. Beachten Sie, dass ein "Wraparound" von Z nach C definiert ist. Die folgenden Sequenzen haben einen "konstanten Schritt":
+</p>
+
+<pre>
+    ACEG... step = 2
+    AZYX... step = 25
+</pre>
+
+<p style="text-align: justify;">
+    Zwei oder mehr Sequenzen werden als "verflochten" bezeichnet, wenn ihre benachbarten Elemente durch genau ein Element der jeweils anderen Sequenz getrennt sind. Zum Beispiel sind die folgenden Sequenzen miteinander verflochten:
+</p>
+
+<pre>
+    AQBRCSDT... sequences: ABCD... step = 1
+                           QRST... step = 1
+    AZTAYRAXP...sequences:  AAA... step = 0
+                            ZYX... step = 25
+                            TRP... step = 24
+</pre>
+
+<p style="text-align: justify;">
+    Geben Sie für die gegebene Zeichenkette mit 12 Zeichen aus 1, 2 oder 3 (finden Sie es selbst heraus) ineinander verschlungenen Sequenzen die nächsten 12 Zeichen der Sequenz zurück.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}sequence-analyzer.svg" alt="example" style="max-height: 200px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Eingabe:</strong> Zeichenkette <span>(str{% if is_js %}ing{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Ausgabe:</strong> String <span>(str{% if is_js %}ing{% endif %})</span>.
+</p>
+
+
+<p>
+    <strong>Beispiele:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!-- <p>
+    <strong>Preconditions:</strong>
+    <ul>
+    <li><i>both given ints should be between -1000 and 1000</i></li>
+    </ul>
+</p> -->
+<p><i>Die Mission wurde von <a target="_blank" href="https://icpc.global/worldfinals/problems/1980-ICPC-World-Finals/1980.pdf">The International Collegiate Programming Contest - 1980</a> übernommen.</i></p>
